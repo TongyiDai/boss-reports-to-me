@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 1720 960" width="1680" height="920" font-family="Noto Sans SC, PingFang SC, Source Han Sans SC, sans-serif">
+  <rect x="-20" y="-20" width="1720" height="960" fill="#fdf0e0"/>
+  <!-- Blue header -->
+  <rect x="0" y="0" width="1680" height="150" fill="#375dfe"/>
+  <text x="60" y="80" font-size="52" font-weight="700" fill="#ffffff">上级链：拿不到授权，也照跑不误</text>
+  <text x="60" y="128" font-size="28" fill="#fdf0e0">双模式设计 · 手动名单永远兜底 · 自动遍历是锦上添花，不是命门</text>
+  <!-- Left card: manual (default) -->
+  <rect x="60" y="210" width="760" height="630" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+  <text x="120" y="300" font-size="40" font-weight="700" fill="#ffffff">手动名单 · 默认</text>
+  <text x="120" y="360" font-size="28" fill="#fdf0e0">开箱即跑，零授权门槛</text>
+  <rect x="120" y="400" width="640" height="380" fill="#ffffff"/>
+  <text x="172" y="472" font-size="30" font-weight="700" fill="#375dfe">你报名，我解析</text>
+  <text x="172" y="530" font-size="26" fill="#1a2240">你说直属上级是谁</text>
+  <text x="172" y="576" font-size="26" fill="#1a2240">还想让哪几位上层向你汇报</text>
+  <text x="172" y="638" font-size="26" fill="#1a2240">search-user 按名字/邮箱解析</text>
+  <text x="172" y="684" font-size="26" fill="#1a2240">你核对是不是本人，再入名单</text>
+  <text x="172" y="746" font-size="26" font-weight="700" fill="#375dfe">现有权限就够，不欠任何人情</text>
+  <!-- Right card: auto (optional) -->
+  <rect x="860" y="210" width="760" height="630" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="920" y="300" font-size="40" font-weight="700" fill="#375dfe">自动遍历 · 可选</text>
+  <text x="920" y="360" font-size="28" fill="#1a2240">补一次授权，链条自己爬</text>
+  <rect x="920" y="400" width="640" height="380" fill="#fdf0e0"/>
+  <text x="972" y="472" font-size="30" font-weight="700" fill="#375dfe">沿 leader 字段逐级向上</text>
+  <text x="972" y="530" font-size="26" fill="#1a2240">自己 → 上级 → 上级的上级</text>
+  <text x="972" y="576" font-size="26" fill="#1a2240">一次取满 +1 到 +4</text>
+  <text x="972" y="638" font-size="26" fill="#1a2240">缺权限？优雅回落到手动</text>
+  <text x="972" y="684" font-size="26" fill="#1a2240">绝不报错崩溃，绝不卡死</text>
+  <text x="972" y="746" font-size="26" font-weight="700" fill="#375dfe">授权是一次性的，之后静默</text>
+  <!-- bottom border box -->
+  <rect x="60" y="860" width="1560" height="0" fill="none"/>
+</svg>

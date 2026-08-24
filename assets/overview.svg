@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 1720 960" width="1680" height="920" font-family="Noto Sans SC, PingFang SC, Source Han Sans SC, sans-serif">
+  <rect x="-20" y="-20" width="1720" height="960" fill="#fdf0e0"/>
+  <!-- Left blue panel -->
+  <rect x="0" y="0" width="620" height="920" fill="#375dfe"/>
+  <text x="66" y="150" font-size="42" font-weight="700" fill="#ffffff">组织架构，反过来读</text>
+  <text x="66" y="300" font-size="120" font-weight="700" fill="#ffffff">老板</text>
+  <text x="66" y="430" font-size="120" font-weight="700" fill="#ffffff">向我</text>
+  <text x="66" y="560" font-size="120" font-weight="700" fill="#ffffff">汇报</text>
+  <rect x="66" y="640" width="490" height="200" fill="#1a2240"/>
+  <text x="114" y="716" font-size="30" font-weight="700" fill="#ffffff">每周五 · 自动</text>
+  <text x="114" y="770" font-size="26" fill="#fdf0e0">你不去追老板的动态</text>
+  <text x="114" y="812" font-size="26" fill="#fdf0e0">动态自己走到你面前</text>
+  <!-- Right area -->
+  <text x="700" y="150" font-size="52" font-weight="700" fill="#1a2240">你的注意力有限，老板的动向无限</text>
+  <rect x="700" y="210" width="940" height="250" fill="#375dfe"/>
+  <text x="756" y="300" font-size="40" font-weight="700" fill="#ffffff">沿组织架构向上取你的各层 leader</text>
+  <text x="756" y="368" font-size="30" fill="#fdf0e0">直属上级 → +2 → +3 → +4，一路读上去</text>
+  <text x="756" y="422" font-size="30" fill="#fdf0e0">只读你有权限看到的，不越界一寸</text>
+  <!-- Bottom three blocks -->
+  <rect x="700" y="510" width="296" height="330" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="758" y="590" font-size="34" font-weight="700" fill="#375dfe">发言</text>
+  <text x="758" y="648" font-size="26" fill="#1a2240">本周群里私聊</text>
+  <text x="758" y="690" font-size="26" fill="#1a2240">说过的关键话</text>
+  <rect x="1022" y="510" width="296" height="330" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="1080" y="590" font-size="34" font-weight="700" fill="#375dfe">文档</text>
+  <text x="1080" y="648" font-size="26" fill="#1a2240">本周写下的</text>
+  <text x="1080" y="690" font-size="26" fill="#1a2240">方案与判断</text>
+  <rect x="1344" y="510" width="296" height="330" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="1402" y="590" font-size="34" font-weight="700" fill="#375dfe">纪要</text>
+  <text x="1402" y="648" font-size="26" fill="#1a2240">开过的会</text>
+  <text x="1402" y="690" font-size="26" fill="#1a2240">留下的妙记</text>
+</svg>

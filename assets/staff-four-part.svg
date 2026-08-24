@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 1720 960" width="1680" height="920" font-family="Noto Sans SC, PingFang SC, Source Han Sans SC, sans-serif">
+  <rect x="-20" y="-20" width="1720" height="960" fill="#fdf0e0"/>
+  <!-- Blue header -->
+  <rect x="0" y="0" width="1680" height="150" fill="#375dfe"/>
+  <text x="60" y="80" font-size="52" font-weight="700" fill="#ffffff">幕僚四段：先给结论，再给你退路</text>
+  <text x="60" y="128" font-size="28" fill="#fdf0e0">按人名分段 · 每人四段固定顺序 · 像参谋汇报，不像日志转储</text>
+  <!-- Four columns 01-04 -->
+  <rect x="60" y="210" width="370" height="630" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="116" y="298" font-size="34" font-weight="700" fill="#375dfe">01　总结</text>
+  <text x="116" y="382" font-size="26" fill="#1a2240">一句话</text>
+  <text x="116" y="426" font-size="26" fill="#1a2240">这周 TA</text>
+  <text x="116" y="470" font-size="26" fill="#1a2240">在忙什么</text>
+  <rect x="116" y="540" width="258" height="240" fill="#fdf0e0"/>
+  <text x="150" y="620" font-size="24" fill="#1a2240">结论先行</text>
+  <text x="150" y="668" font-size="24" fill="#1a2240">不用你翻</text>
+  <text x="150" y="716" font-size="24" fill="#1a2240">半天原文</text>
+  <rect x="450" y="210" width="370" height="630" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="506" y="298" font-size="34" font-weight="700" fill="#375dfe">02　观点</text>
+  <text x="506" y="382" font-size="26" fill="#1a2240">我替你</text>
+  <text x="506" y="426" font-size="26" fill="#1a2240">读出的</text>
+  <text x="506" y="470" font-size="26" fill="#1a2240">言外之意</text>
+  <rect x="506" y="540" width="258" height="240" fill="#fdf0e0"/>
+  <text x="540" y="620" font-size="24" fill="#1a2240">基于原文</text>
+  <text x="540" y="668" font-size="24" fill="#1a2240">不外推</text>
+  <text x="540" y="716" font-size="24" fill="#1a2240">不臆断</text>
+  <rect x="840" y="210" width="370" height="630" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="896" y="298" font-size="34" font-weight="700" fill="#375dfe">03　原文</text>
+  <text x="896" y="382" font-size="26" fill="#1a2240">TA 的原话</text>
+  <text x="896" y="426" font-size="26" fill="#1a2240">带可点击</text>
+  <text x="896" y="470" font-size="26" fill="#1a2240">来源+时间</text>
+  <rect x="896" y="540" width="258" height="240" fill="#fdf0e0"/>
+  <text x="930" y="620" font-size="24" fill="#1a2240">不是我编</text>
+  <text x="930" y="668" font-size="24" fill="#1a2240">点开就能</text>
+  <text x="930" y="716" font-size="24" fill="#1a2240">回到现场</text>
+  <rect x="1230" y="210" width="390" height="630" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+  <text x="1286" y="298" font-size="34" font-weight="700" fill="#ffffff">04　下一步</text>
+  <text x="1286" y="382" font-size="26" fill="#fdf0e0">这事跟你</text>
+  <text x="1286" y="426" font-size="26" fill="#fdf0e0">有什么关系</text>
+  <text x="1286" y="470" font-size="26" fill="#fdf0e0">该动哪根弦</text>
+  <rect x="1286" y="540" width="278" height="240" fill="#1a2240"/>
+  <text x="1320" y="620" font-size="24" font-weight="700" fill="#ffffff">落到你身上</text>
+  <text x="1320" y="668" font-size="24" fill="#fdf0e0">才叫汇报</text>
+  <text x="1320" y="716" font-size="24" fill="#fdf0e0">否则只是转发</text>
+</svg>

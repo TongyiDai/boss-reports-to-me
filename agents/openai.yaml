@@ -1,0 +1,4 @@
+interface:
+  display_name: "老板向我汇报"
+  short_description: "每周五自动汇总你各层 leader 的飞书动态周报"
+  default_prompt: "用老板向我汇报，生成本周我 leader 的飞书动态周报"
