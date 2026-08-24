@@ -1,5 +1,4 @@
-> "What information consumes is rather obvious: it consumes the attention of its recipients. Hence a wealth of information creates a poverty of attention."
-> — Herbert A. Simon, *Designing Organizations for an Information-Rich World* (1971)
+> 领导，请向我汇报！
 
 <h1 align="center">老板向我汇报 · Boss Reports To Me</h1>
 
