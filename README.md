@@ -1,6 +1,6 @@
-> 领导，请向我汇报！
-
 <h1 align="center">老板向我汇报 · Boss Reports To Me</h1>
+
+<p align="center"><strong>领导，请向我汇报！</strong></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Agent%20Skill-agentskills.io-2F6BFF" alt="Agent Skill">
@@ -44,16 +44,16 @@
 | **文档** | 按 owner 捞本周新建/改动，内存里按时间精确回裁 | 剔除导入批量噪声，只留真实撰写 |
 | **纪要** | 妙记 + 会议记录，按 owner/参会人捞，路由到正文取内容 | AI 摘要不当事实，缺一手佐证就停手 |
 
-## 上级链：拿不到授权，也照跑不误
+## 上级链：支持两种链路获取上级信息
 
-组织架构向上遍历是这个 skill 唯一的硬骨头。它用**双模式**啃下来，手动名单永远兜底。
+组织架构向上遍历，支持两种链路，按你的授权情况自动选择。
 
 <p align="center">
-  <img src="assets/leader-chain.png" alt="上级链双模式：手动名单默认零授权即跑，自动遍历可选补授权后逐级向上取四层" />
+  <img src="assets/leader-chain.png" alt="上级链两种链路：手动名单按姓名解析，自动遍历沿组织架构逐级向上取四层" />
 </p>
 
-- **手动名单（默认）**：首次安装直接问你——直属上级是谁？还想让哪几位上层向你汇报？逐个用 `contact +search-user` 按姓名/邮箱解析成 open_id，你核对是不是本人，再入名单。**现有权限就够，零授权门槛，开箱即跑。**
-- **自动遍历（可选）**：愿意补一次 `contact:contact.base:readonly` 授权，就能沿 `leader_open_id` 逐级向上一次取满 +1 到 +4。缺权限时**优雅回落**到手动模式，绝不报错崩溃。授权是一次性的，之后静默。
+- **手动名单（默认）**：首次安装直接问你——直属上级是谁？还想让哪几位上层向你汇报？逐个用 `contact +search-user` 按姓名/邮箱解析成 open_id，你核对是不是本人，再入名单。开箱即跑。
+- **自动遍历（可选）**：补一次 `contact:contact.base:readonly` 授权后，沿 `leader_open_id` 逐级向上一次取满 +1 到 +4。授权是一次性的，之后静默运行。
 
 ## 周报长这样：幕僚四段
 
