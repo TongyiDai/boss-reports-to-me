@@ -85,9 +85,7 @@ description: |
    printf '%s' "$content" | python3 scripts/state.py fingerprint --source minute   # im / doc
    cat all_fps.txt | python3 scripts/state.py seen   # 只回未上报过的
    ```
-5. **成稿**：按 **`references/output-contract.md`** 当前风格（默认幕僚四段：总结·观点·原文·下一步），
-   原文按密度排序（纪要→消息→文档）。高交集 leader 独立成段；证据 < 3 条且来源单一的更上层
-   并入「上层零星信号」合并段。顶部一句总判断，每条带可点击来源+时间。相关性三重过滤。
+5. **成稿**：按 **`references/output-contract.md`** 的**规范字段模板**成文——段头元信息（姓名·层级·部门·证据条数·主场景）+ 固定四段（总结/观点/原文/下一步）+ 统一的原文条目格式，原文按密度排序（纪要→消息→文档）。字段顺序不可变，缺字段留「—」占位。高交集 leader 独立成段；证据 < 3 条且来源单一的更上层并入「上层零星信号」。当前风格默认 `chief`；选 `humor` 时用「小X」昵称替代 leader 姓名（chief/sair 用真实姓名）。相关性三重过滤。
 6. **发送**：取本人 open_id（`lark-cli contact +get-user --as user`），推送：
    ```bash
    lark-cli im +messages-send --as user --user-id ou_SELF --markdown "<周报>"
@@ -117,3 +115,4 @@ description: |
 - 不把 AI 会议摘要当事实，缺一手佐证时停止下钻。
 - state 只存调度参数 + `source:sha256` 指纹，绝不存原文/token/凭证；roster 只存姓名/open_id/层级标签。
 - 这是「向上」读人，比读同级更敏感：抽象成行为/主题，不做人物画像、不做绩效判断、不用于监控。
+- humor 风格的「小X」昵称只出现在这份给用户本人看的周报里，属口吻处理，不落盘、不外传。
