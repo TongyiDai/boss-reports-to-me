@@ -1,7 +1,7 @@
 ---
 name: boss-reports-to-me
 description: |
-  「老板向我汇报」——把组织架构上你的各层直属 leader，反过来向你汇报本周动态。每周五（可调）沿 roster 收集每位 leader 在本周内、你有权限可见的飞书发言、撰写文档、会议智能纪要/妙记，按人名分段结构化成含「总结·观点·原文·下一步」的周报，通过飞书消息推送给你本人。用户说「老板向我汇报」「让我的老板给我汇报」「本周我领导在忙什么/关注什么」「上级动态周报」「leader 周报」「boss reports to me」，或要设置/查看/停用这类每周汇报时使用。仅限本人自愿自读、只用本人已有权限内容，不做他人画像/绩效判断，不用于监控。
+  「老板向我汇报」——把组织架构上你的各层直属 leader，反过来向你汇报本周动态。每周五（可调）沿 roster 收集每位 leader 在本周内、你有权限可见的会议智能纪要/妙记、消息发言、撰写文档（按信息密度排序），按人名分段结构化成含「总结·观点·原文·下一步」的周报，通过飞书消息推送给你本人。用户说「老板向我汇报」「让我的老板给我汇报」「本周我领导在忙什么/关注什么」「上级动态周报」「leader 周报」「boss reports to me」，或要设置/查看/停用这类每周汇报时使用。仅限本人自愿自读、只用本人已有权限内容，不做他人画像/绩效判断，不用于监控。
 ---
 
 # 老板向我汇报 (Boss Reports To Me)
@@ -9,7 +9,7 @@ description: |
 ## 这个 skill 做什么
 
 沿组织架构收集你的各层 leader（直属上级 + 你选择覆盖的更上层）在本周内**你有权限可见**的
-飞书资产（发言 / 文档 / 会议纪要），按人名分段汇总成周报，推送给你本人。默认每周五运行。
+飞书资产（会议纪要 / 消息发言 / 文档，按信息密度排序），按人名分段汇总成周报，推送给你本人。默认每周五运行。
 
 **边界（重要）**：只用当前用户本人已有权限能看到的内容（`--as user` 天然如此）；只做「本周动态摘要」，
 不给 leader 建人物档案、不做绩效/能力判断、不用于监控。采集到的原文**不落盘、不进记忆**。
@@ -74,15 +74,20 @@ description: |
    python3 scripts/state.py window --at "$(date -Iseconds)"
    ```
 2. **取 roster**：`python3 scripts/roster.py show`。
-3. **逐人采集**：对每位 leader 收集发言 / 文档 / 纪要——命令、分页、解析陷阱见
-   **`references/collection.md`**。空结果是合法结果。
+3. **逐人采集**（按信息密度，纪要优先）：对每位 leader 收集
+   **① 会议纪要/妙记（主口径）→ ② 消息发言 → ③ 文档（弱信号，有则补充）**。
+   命令、字段名、解析陷阱见 **`references/collection.md`**。三个高频坑：
+   - 纪要用 `--participant-ids`（不是 `--owner-ids`，owner 几乎全空），结果在 `data.items`；
+   - IM 结果在 `data.messages`，`content` 已是纯文本，**不要二次 `json.loads`**；
+   - 文档对上级链常无产出，别为凑「三类」强撑。空结果是合法结果。
 4. **去重**：对候选内容算指纹并过滤已上报过的：
    ```bash
-   printf '%s' "$content" | python3 scripts/state.py fingerprint --source im   # doc / minute
+   printf '%s' "$content" | python3 scripts/state.py fingerprint --source minute   # im / doc
    cat all_fps.txt | python3 scripts/state.py seen   # 只回未上报过的
    ```
 5. **成稿**：按 **`references/output-contract.md`** 当前风格（默认幕僚四段：总结·观点·原文·下一步），
-   按人名分段，顶部一句总判断，每条原文带可点击来源+时间。相关性三重过滤。
+   原文按密度排序（纪要→消息→文档）。高交集 leader 独立成段；证据 < 3 条且来源单一的更上层
+   并入「上层零星信号」合并段。顶部一句总判断，每条带可点击来源+时间。相关性三重过滤。
 6. **发送**：取本人 open_id（`lark-cli contact +get-user --as user`），推送：
    ```bash
    lark-cli im +messages-send --as user --user-id ou_SELF --markdown "<周报>"

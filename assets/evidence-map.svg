@@ -2,39 +2,39 @@
   <rect x="-20" y="-20" width="1720" height="960" fill="#fdf0e0"/>
   <!-- Blue header -->
   <rect x="0" y="0" width="1680" height="150" fill="#375dfe"/>
-  <text x="60" y="80" font-size="52" font-weight="700" fill="#ffffff">三类资产，一个都跑不掉</text>
-  <text x="60" y="128" font-size="28" fill="#fdf0e0">证据从哪来 · 每类都有专门的口径去捞 · 全程只在你有权限的范围内</text>
-  <!-- Column 1 -->
-  <rect x="60" y="210" width="500" height="630" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
-  <text x="120" y="300" font-size="38" font-weight="700" fill="#375dfe">01　发言</text>
-  <text x="120" y="372" font-size="27" fill="#1a2240">按 sender 捞本周消息</text>
-  <text x="120" y="420" font-size="27" fill="#1a2240">关键词留空，靠人+时间</text>
-  <text x="120" y="468" font-size="27" fill="#1a2240">分页取全，一条不漏</text>
-  <rect x="120" y="520" width="380" height="260" fill="#fdf0e0"/>
-  <text x="168" y="586" font-size="24" fill="#1a2240">只命中你和 TA</text>
-  <text x="168" y="628" font-size="24" fill="#1a2240">共同所在的群</text>
-  <text x="168" y="686" font-size="24" font-weight="700" fill="#375dfe">这就是边界</text>
-  <text x="168" y="728" font-size="24" fill="#1a2240">看不到就是看不到</text>
-  <!-- Column 2 -->
+  <text x="60" y="80" font-size="52" font-weight="700" fill="#ffffff">三类资产，按信息密度排序</text>
+  <text x="60" y="128" font-size="28" fill="#fdf0e0">会议纪要 &gt; 消息发言 &gt; 文档 · 全程只在你有权限的范围内</text>
+  <!-- Column 1: minutes (primary, blue) -->
+  <rect x="60" y="210" width="500" height="630" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+  <text x="120" y="300" font-size="38" font-weight="700" fill="#ffffff">01　会议纪要</text>
+  <text x="120" y="352" font-size="24" fill="#fdf0e0">主口径 · 密度最高</text>
+  <text x="120" y="410" font-size="27" fill="#ffffff">按参与人捞，不按 owner</text>
+  <text x="120" y="456" font-size="27" fill="#ffffff">一场会顶几十条消息</text>
+  <rect x="120" y="510" width="380" height="270" fill="#1a2240"/>
+  <text x="168" y="576" font-size="24" fill="#fdf0e0">leader 极少是</text>
+  <text x="168" y="618" font-size="24" fill="#fdf0e0">妙记 owner</text>
+  <text x="168" y="676" font-size="24" font-weight="700" fill="#ffffff">纪要挂在组织者名下</text>
+  <text x="168" y="718" font-size="24" fill="#fdf0e0">按 owner 跑就全丢</text>
+  <!-- Column 2: messages (secondary) -->
   <rect x="590" y="210" width="500" height="630" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
-  <text x="650" y="300" font-size="38" font-weight="700" fill="#375dfe">02　文档</text>
-  <text x="650" y="372" font-size="27" fill="#1a2240">按 owner 捞本周文档</text>
-  <text x="650" y="420" font-size="27" fill="#1a2240">新建的、改动的都看</text>
-  <text x="650" y="468" font-size="27" fill="#1a2240">内存里按时间精确回裁</text>
-  <rect x="650" y="520" width="380" height="260" fill="#fdf0e0"/>
-  <text x="698" y="586" font-size="24" fill="#1a2240">导入批量是噪声</text>
-  <text x="698" y="628" font-size="24" fill="#1a2240">同天大量同前缀</text>
-  <text x="698" y="686" font-size="24" font-weight="700" fill="#375dfe">一律剔除</text>
-  <text x="698" y="728" font-size="24" fill="#1a2240">只留真实撰写</text>
-  <!-- Column 3 -->
-  <rect x="1120" y="210" width="500" height="630" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
-  <text x="1180" y="300" font-size="38" font-weight="700" fill="#ffffff">03　纪要</text>
-  <text x="1180" y="372" font-size="27" fill="#fdf0e0">妙记 + 会议记录</text>
-  <text x="1180" y="420" font-size="27" fill="#fdf0e0">按 owner / 参会人捞</text>
-  <text x="1180" y="468" font-size="27" fill="#fdf0e0">路由到正文取内容</text>
-  <rect x="1180" y="520" width="380" height="260" fill="#1a2240"/>
-  <text x="1228" y="586" font-size="24" fill="#fdf0e0">AI 摘要不当事实</text>
-  <text x="1228" y="628" font-size="24" fill="#fdf0e0">没权限就明说</text>
-  <text x="1228" y="686" font-size="24" font-weight="700" fill="#ffffff">缺佐证就停手</text>
-  <text x="1228" y="728" font-size="24" fill="#fdf0e0">不臆造一句话</text>
+  <text x="650" y="300" font-size="38" font-weight="700" fill="#375dfe">02　消息发言</text>
+  <text x="650" y="352" font-size="24" fill="#5b5a57">次口径 · 及时有态度</text>
+  <text x="650" y="410" font-size="27" fill="#1a2240">按 sender 捞，关键词留空</text>
+  <text x="650" y="456" font-size="27" fill="#1a2240">分页取全，一条不漏</text>
+  <rect x="650" y="510" width="380" height="270" fill="#fdf0e0"/>
+  <text x="698" y="576" font-size="24" fill="#1a2240">只命中你和 TA</text>
+  <text x="698" y="618" font-size="24" fill="#1a2240">共同所在的群</text>
+  <text x="698" y="676" font-size="24" font-weight="700" fill="#375dfe">看不到就是看不到</text>
+  <text x="698" y="718" font-size="24" fill="#1a2240">这就是权限边界</text>
+  <!-- Column 3: docs (weak) -->
+  <rect x="1120" y="210" width="500" height="630" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+  <text x="1180" y="300" font-size="38" font-weight="700" fill="#375dfe">03　文档</text>
+  <text x="1180" y="352" font-size="24" fill="#5b5a57">弱信号 · 有则补充</text>
+  <text x="1180" y="410" font-size="27" fill="#1a2240">按 owner 捞本周产出</text>
+  <text x="1180" y="456" font-size="27" fill="#1a2240">内存里按时间回裁</text>
+  <rect x="1180" y="510" width="380" height="270" fill="#fdf0e0"/>
+  <text x="1228" y="576" font-size="24" fill="#1a2240">上级链场景</text>
+  <text x="1228" y="618" font-size="24" fill="#1a2240">常常无产出</text>
+  <text x="1228" y="676" font-size="24" font-weight="700" fill="#375dfe">leader 不亲自建档</text>
+  <text x="1228" y="718" font-size="24" fill="#1a2240">无则不必强凑</text>
 </svg>
